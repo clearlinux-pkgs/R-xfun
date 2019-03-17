@@ -4,13 +4,12 @@
 #
 Name     : R-xfun
 Version  : 0.5
-Release  : 6
+Release  : 7
 URL      : https://cran.r-project.org/src/contrib/xfun_0.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xfun_0.5.tar.gz
 Summary  : Miscellaneous Functions by 'Yihui Xie'
 Group    : Development/Tools
 License  : MIT
-Requires: R-remotes
 BuildRequires : R-remotes
 BuildRequires : buildreq-R
 
@@ -28,10 +27,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1550722209
+export SOURCE_DATE_EPOCH=1552837227
 
 %install
-export SOURCE_DATE_EPOCH=1550722209
+export SOURCE_DATE_EPOCH=1552837227
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -67,8 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library xfun|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  xfun || :
 
 
 %files
@@ -99,3 +97,13 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/xfun/help/xfun.rdx
 /usr/lib64/R/library/xfun/html/00Index.html
 /usr/lib64/R/library/xfun/html/R.css
+/usr/lib64/R/library/xfun/tests/test-all.R
+/usr/lib64/R/library/xfun/tests/testit/test-data-structure.R
+/usr/lib64/R/library/xfun/tests/testit/test-encoding.R
+/usr/lib64/R/library/xfun/tests/testit/test-io.R
+/usr/lib64/R/library/xfun/tests/testit/test-json.R
+/usr/lib64/R/library/xfun/tests/testit/test-markdown.R
+/usr/lib64/R/library/xfun/tests/testit/test-packages.R
+/usr/lib64/R/library/xfun/tests/testit/test-paths.R
+/usr/lib64/R/library/xfun/tests/testit/test-string.R
+/usr/lib64/R/library/xfun/tests/testit/test-utils.R
