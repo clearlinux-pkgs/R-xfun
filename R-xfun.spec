@@ -4,7 +4,7 @@
 #
 Name     : R-xfun
 Version  : 0.5
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/xfun_0.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xfun_0.5.tar.gz
 Summary  : Miscellaneous Functions by 'Yihui Xie'
@@ -27,10 +27,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552837227
+export SOURCE_DATE_EPOCH=1552916927
 
 %install
-export SOURCE_DATE_EPOCH=1552837227
+export SOURCE_DATE_EPOCH=1552916927
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
