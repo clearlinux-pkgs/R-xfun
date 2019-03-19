@@ -1,3 +1,6 @@
 # This file contains recursive sources that require this package
+R-RcmdrMisc
+R-haplo.stats
 R-knitr
 R-styler
+R-tinytex
