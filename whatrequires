@@ -2,5 +2,7 @@
 R-RcmdrMisc
 R-haplo.stats
 R-knitr
+R-rglwidget
 R-styler
 R-tinytex
+apache-spark
