@@ -1,8 +1,13 @@
 # This file contains recursive sources that require this package
+R-Hmisc
 R-RcmdrMisc
 R-haplo.stats
+R-htmlTable
 R-knitr
+R-modest
+R-rgl
 R-rglwidget
+R-rms
 R-styler
 R-tinytex
 apache-spark
