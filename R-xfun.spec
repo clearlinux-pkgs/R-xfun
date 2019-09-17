@@ -4,16 +4,12 @@
 #
 Name     : R-xfun
 Version  : 0.9
-Release  : 18
+Release  : 19
 URL      : https://cran.r-project.org/src/contrib/xfun_0.9.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xfun_0.9.tar.gz
-Summary  : Miscellaneous Functions by Yihui Xie
+Summary  : Miscellaneous Functions by 'Yihui Xie'
 Group    : Development/Tools
 License  : MIT
-Requires: R-remotes
-Requires: R-rmarkdown
-BuildRequires : R-remotes
-BuildRequires : R-rmarkdown
 BuildRequires : buildreq-R
 
 %description
@@ -30,10 +26,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1566487337
+export SOURCE_DATE_EPOCH=1568750955
 
 %install
-export SOURCE_DATE_EPOCH=1566487337
+export SOURCE_DATE_EPOCH=1568750955
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
