@@ -1,5 +1,5 @@
 PKG_NAME := R-xfun
-URL = https://cran.r-project.org/src/contrib/xfun_0.14.tar.gz
+URL = https://cran.r-project.org/src/contrib/xfun_0.15.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
