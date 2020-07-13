@@ -4,7 +4,7 @@
 #
 Name     : R-xfun
 Version  : 0.15
-Release  : 28
+Release  : 29
 URL      : https://cran.r-project.org/src/contrib/xfun_0.15.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xfun_0.15.tar.gz
 Summary  : Miscellaneous Functions by 'Yihui Xie'
