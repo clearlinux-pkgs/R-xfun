@@ -4,7 +4,7 @@
 #
 Name     : R-xfun
 Version  : 0.27
-Release  : 49
+Release  : 50
 URL      : https://cran.r-project.org/src/contrib/xfun_0.27.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xfun_0.27.tar.gz
 Summary  : Supporting Functions for Packages Maintained by 'Yihui Xie'
