@@ -4,7 +4,7 @@
 #
 Name     : R-xfun
 Version  : 0.29
-Release  : 54
+Release  : 55
 URL      : https://cran.r-project.org/src/contrib/xfun_0.29.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xfun_0.29.tar.gz
 Summary  : Supporting Functions for Packages Maintained by 'Yihui Xie'
@@ -34,10 +34,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1639587810
+export SOURCE_DATE_EPOCH=1641149712
 
 %install
-export SOURCE_DATE_EPOCH=1639587810
+export SOURCE_DATE_EPOCH=1641149712
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -125,3 +125,5 @@ R CMD check --no-manual --no-examples --no-codoc xfun || :
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/xfun/libs/xfun.so
+/usr/lib64/R/library/xfun/libs/xfun.so.avx2
+/usr/lib64/R/library/xfun/libs/xfun.so.avx512
