@@ -4,7 +4,7 @@
 #
 Name     : R-xfun
 Version  : 0.34
-Release  : 64
+Release  : 65
 URL      : https://cran.r-project.org/src/contrib/xfun_0.34.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xfun_0.34.tar.gz
 Summary  : Supporting Functions for Packages Maintained by 'Yihui Xie'
