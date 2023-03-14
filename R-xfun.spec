@@ -4,7 +4,7 @@
 #
 Name     : R-xfun
 Version  : 0.37
-Release  : 68
+Release  : 69
 URL      : https://cran.r-project.org/src/contrib/xfun_0.37.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xfun_0.37.tar.gz
 Summary  : Supporting Functions for Packages Maintained by 'Yihui Xie'
@@ -12,9 +12,6 @@ Group    : Development/Tools
 License  : MIT
 Requires: R-xfun-lib = %{version}-%{release}
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 No detailed description available
@@ -36,10 +33,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1675210680
+export SOURCE_DATE_EPOCH=1678825966
 
 %install
-export SOURCE_DATE_EPOCH=1675210680
+export SOURCE_DATE_EPOCH=1678825966
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
