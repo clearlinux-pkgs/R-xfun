@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-xfun
-Version  : 0.38
-Release  : 71
-URL      : https://cran.r-project.org/src/contrib/xfun_0.38.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/xfun_0.38.tar.gz
+Version  : 0.39
+Release  : 72
+URL      : https://cran.r-project.org/src/contrib/xfun_0.39.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/xfun_0.39.tar.gz
 Summary  : Supporting Functions for Packages Maintained by 'Yihui Xie'
 Group    : Development/Tools
 License  : MIT
@@ -27,17 +27,16 @@ lib components for the R-xfun package.
 
 %prep
 %setup -q -n xfun
-cd %{_builddir}/xfun
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1679676119
+export SOURCE_DATE_EPOCH=1682005209
 
 %install
-export SOURCE_DATE_EPOCH=1679676119
+export SOURCE_DATE_EPOCH=1682005209
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
