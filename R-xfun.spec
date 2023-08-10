@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-xfun
-Version  : 0.39
-Release  : 74
-URL      : https://cran.r-project.org/src/contrib/xfun_0.39.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/xfun_0.39.tar.gz
+Version  : 0.40
+Release  : 75
+URL      : https://cran.r-project.org/src/contrib/xfun_0.40.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/xfun_0.40.tar.gz
 Summary  : Supporting Functions for Packages Maintained by 'Yihui Xie'
 Group    : Development/Tools
 License  : MIT
@@ -27,16 +27,19 @@ lib components for the R-xfun package.
 
 %prep
 %setup -q -n xfun
+pushd ..
+cp -a xfun buildavx2
+popd
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682005209
+export SOURCE_DATE_EPOCH=1691687143
 
 %install
-export SOURCE_DATE_EPOCH=1682005209
+export SOURCE_DATE_EPOCH=1691687143
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -74,6 +77,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
 R CMD check --no-manual --no-examples --no-codoc . || :
 
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
