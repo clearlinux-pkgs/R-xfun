@@ -1,6 +1,7 @@
 # This file contains recursive sources that require this package
 R-highr
 R-knitr
+R-leaflet
 R-markdown
 R-rmarkdown
 R-tinytex
